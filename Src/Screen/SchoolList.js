@@ -14,6 +14,7 @@ const SchoolList = ({ navigation }) => {
       id: "1",
       name: "AKULI CHALA JUNIOR SCHOOL",
       link: "https://easyresult.easytechsolution.org/student_login.php",
+      noticeApi: "https://services.apistore.dev/apistore/countries/v1",
     },
     { id: "2", name: "BHAWMAN TALAGAHA MODEL HIGH SCHOOL" },
     { id: "3", name: "BIJOY SMARANI JR. SCHOOL" },
@@ -31,7 +32,10 @@ const SchoolList = ({ navigation }) => {
     <TouchableOpacity
       style={styles.card}
       onPress={() =>
-        navigation.navigate(Routes.LoginScreen, { link: item.link })
+        navigation.navigate(Routes.LoginScreen, {
+          link: item.link,
+          name: item.name,
+        })
       }
     >
       <Text style={styles.cardText}>{item.name}</Text>

@@ -20,7 +20,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.mansurol_islam.easytechsolution"
+      "package": "com.mansurol_islam.easytechsolution",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -33,6 +34,12 @@
     "autoHideSplash": {
       "when": "after-splash",
       "delay": 3000
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/1040fa6d-6a84-4d51-afcf-a3403fd21554"
     }
   }
 }

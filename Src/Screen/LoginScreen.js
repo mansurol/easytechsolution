@@ -15,6 +15,7 @@ export default function LoginScreen({ navigation, route }) {
     {
       id: "1",
       name: "১ম সেমিস্টার পরীক্ষা-২০২৪ এর সময়সূচি (একাদশ শ্রেণি) - 18/02/2024",
+      description: "",
     },
     {
       id: "2",
@@ -50,18 +51,13 @@ export default function LoginScreen({ navigation, route }) {
   ];
   const handleLogin = () => {
     // Open WebView with the provided link
-    navigation.navigate(Routes.WebScreenView, { url: link });
+    navigation.navigate(Routes.Noticedetails, { url: link });
   };
 
   const NoticeCard = ({ item }) => (
     <TouchableOpacity
       style={styles.cardTwo}
-      // onPress={() =>
-      //   navigation.navigate(Routes.LoginScreen, {
-      //     link: item.link,
-      //     name: item.name,
-      //   })
-      // }
+      onPress={() => navigation.navigate(Routes.Noticedetails)}
     >
       <Text style={styles.cardText}>{item.name}</Text>
     </TouchableOpacity>

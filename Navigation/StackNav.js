@@ -3,6 +3,7 @@ import Routes from "../Utility/Routes";
 import SchoolList from "../Src/Screen/SchoolList";
 import LoginScreen from "../Src/Screen/LoginScreen";
 import WebScreenView from "../Src/Screen/WebScreenView";
+import Noticedetails from "../Src/Screen/Noticedetails";
 
 const Stack = createNativeStackNavigator();
 
@@ -22,6 +23,11 @@ export default function StackNav() {
       <Stack.Screen
         name={Routes.WebScreenView}
         component={WebScreenView}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name={Routes.Noticedetails}
+        component={Noticedetails}
         options={{ headerShown: false }}
       />
     </Stack.Navigator>

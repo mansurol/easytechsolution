@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "872968560821",
+    "project_id": "pushnotification-831bb",
+    "storage_bucket": "pushnotification-831bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:872968560821:android:cc04788772f1e55c01defc",
+        "android_client_info": {
+          "package_name": "com.mansurol_islam.easytechsolution"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHqSVe4Lgcseo9A_xf4DWmRH7B7z9yeYc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
